@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <div class="logo-and-text">
+            <img src="badge.jpg" alt="">
+            <h1>WELCOME TO HAMEEDAH INTERNATIONAL COLLEGE </h1>
+        </div>
+    </header>
+   
+    <nav>
+        <ul>
+            <li><a href="file.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="active" href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <main class="admission">
+        <form action="process-admission.php" method="post">
+        <h1> Parent Information</h1>
+        
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="middle-name">Middle Name:</label>
+          <input type="text" id="middle-name" name="middle-name" required>
+         <label for="Last-name">Last Name:</label>
+          <input type="text" id="Last-name" name="Last-name" required>
+        
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="Address">address:</label>
+        <input type="tel" id="address" name="address" required>
+        <label for="text ">Occupation:</label>
+        <input type="text" id="Occupation" name="Occupation" required>
+        
+        <h1>Student information</h1>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="program">class:</label>
+            <select id="program" name="program" required>
+                <option value="creche">Creche</option>
+                <option value="Pre-Nursery">Pre-Nursery</option>
+                <option value="Nursery 1">Nursery 1</option>
+                <option value="Nursery 2">Nursery 2</option>
+                <option value="Primary 1">Primary 1</option>
+                <option value="Primary 2">Primary 2</option>
+                <option value=" Primary 3">Primary 3</option>
+                <option value=" Primary 4">Primary 4</option> 
+                <option value="Primary 5"> Primary 5</option>
+                <option value="JSS 1"> JSS 1</option>
+                <option value="JSS 2"> JSS 2</option>
+                <option value="JSS 3"> JSS 3</option>
+                <option value="SS 1"> SS 1</option>
+                <option value="SS 2"> SS 2</option>
+                <option value="SS 3"> SS 3</option>
+            </select>
+            
+            <label for="message">Additional Information (if any):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+</body>
+</html>
